@@ -90,7 +90,6 @@ What things you need to install the software and how to install them.
 - Microsoft SQL 2019
    
 ## Installing
-A step by step series of examples that tell you how to get a development env running.
 
 Once you have installed the necessary software, you may get this online repository link from GitHub and Clone it to your local device. 
 
