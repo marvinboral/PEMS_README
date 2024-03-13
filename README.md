@@ -25,6 +25,7 @@
 - [Project Scope](#project_scope)
 - [Team Introduction](#team_intro)
 - [Getting Started](#getting_started)
+- [File Structure](#file_structure)
 - [Deployment](#deployment)
 - [Usage](#usage)
 - [Built Using](#built_using)
@@ -33,8 +34,9 @@
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
 
-## 🧐 Project Introduction <a name = "project_intro"></a>
+# 🧐 Project Introduction <a name = "project_intro"></a>
 Our project name is Peer Evaluation Management System or PEMS which is an evaluation database management system for our System Analysis and Design course which is also known as the CIT 2775/76 Program. Currently, the client is gathering student information from Canvas and manually transposing it into an Excel spreadsheet, he must manually calculate the ratings of each student and the ratings they receive from their teammates, he must categorize them as well as provide his evaluation/rating to the students. This process takes excessive time and requires constant precision, which can be difficult to do when he has over 40 students’ feedback and ratings to calculate and record.
+
 The client is looking to create a database tied to a website that will allow students to log into their profiles and provide numerical and written feedback on each team member. The program needs to automatically calculate the scores entered by the students so that he can have grand totals for each student. The client also wants to be able to provide feedback to each student, view their feedback, view the ratings of other students, and generate a categorized report of the ratings by student or team.
 
 **Purpose of Project:**
@@ -76,33 +78,121 @@ The project will facilitate the student evaluation process to enhance efficiency
   
 **Client**: Mr. Timothy Frantz, CIT Instructor at Lethbridge College
 
-
-## 🏁 Getting Started <a name = "getting_started"></a>
+# 🏁 Getting Started <a name = "getting_started"></a>
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-### Prerequisites
+## Prerequisites
 What things you need to install the software and how to install them.
 
-```
-Give examples
-```
-
-### Installing
+- Visual Studio 2022
+- NET Core 6 Framework
+- C#
+- Microsoft SQL 2019
+   
+## Installing
 A step by step series of examples that tell you how to get a development env running.
 
-Say what the step will be
+Once you have installed the necessary software, you may get this online repository link from GitHub and Clone it to your local device. 
 
 ```
-Give the example
+https://github.com/MartinRizada/PEMS.git
+```
+Navigate to the clientApp directory within your project
+```
+cd clientApp
 ```
 
-And repeat
-
+Install the required dependencies
 ```
-until finished
+npm install
 ```
+#  File Structure <a name = "file_structure"></a>
 
-End with an example of getting some data out of the system or using it for a little demo.
+This project is organized into several directories and files. 
+
+## 📁  ClientApp/src
+
+Main directory
+
+### 📁 Components
+- `AdminNav.js`: Navigation component for admin users.
+- `EvaluationForm.js`: Form component for evaluations.
+- `EvaluationForStudent.js`: Evaluation viewing component for students.
+- `Footer.js`: Footer component displayed on all pages.
+- `InstructorNav.js`: Navigation component for instructors.
+- `StudentEvaluationReport.js`: Component to display evaluation reports to students.
+- `StudentNav.js`: Navigation component for students.
+
+## 📁 Modals
+
+Modals are used to create pop-up windows in the application interface.  Modals are mainly used for CRUD functions on the administrator page. 
+
+### List of Add Modal Components
+
+1. `AddCriteriaModal.js`: Modal to add evaluation criteria.
+2. `AddEvaluationModal.js`: Modal to add evaluations.
+3. `AddInstructorModal.js`: Modal to add instructors.
+4. `AddStudentModal.js`: Modal to add students.
+5. `AddTeamModal.js`: Modal to add teams.
+
+### Edit Modals
+
+These modals are used for editing existing information.
+
+1. `EditCriteriaModal.js`: Modal to edit criteria information and details.
+2. `EditEvaluationModal.js`: Modal to edit evaluation details and information.
+3. `EditInstructorModal.js`: Modal used by admins or higher authority users, allowing them the ability to edit instructor details and information within the application interface easily and efficiently without needing direct access to the database or backend system directly, ensuring security protocols are maintained while providing flexibility in user management tasks.
+4. `EditSectionModal.js`: This modal allows authorized users (instructor/adminsitrator) with privileges sufficient enough, access into sections’ data where they can make necessary adjustments, corrections or updates as required ensuring that data integrity is maintained at all times while also allowing adaptability and modifications as needed aligning with organizational needs and requirements.
+5. `EditStudentModal.js`: A specialized modal designed specifically with features enabling easy editing of student’s data by instructor/administrator ensuring that student records are always up-to-date reflecting their current status, achievements, progress among other relevant details crucial in monitoring and evaluating student performance over time.
+6. `EditTeamModal.js`: This modal provides functionalities tailored towards making team data adjustments where necessary such as removing team members and updating the team name.
+
+## 📁 Pages
+This directory contains the main pages of PEMS:
+
+- `AccountPage.js`: The account page.
+- `AdminDashboard.js`: The admin dashboard page.
+- `EvaluationPage.js`: The evaluation page.
+- `InstructorReport.js`: The instructor report page.
+- `LoginPage.js`: The login page.
+- `StudentDashboard.js`: The student dashboard page.
+
+## 📁 Styles
+
+This directory contains the styles for the applications and has several sub-directories. 
+
+### 📁 Components
+
+This sub-directory contains the main components of the application. Each component has a corresponding CSS file for styling:
+
+- `AdminNav.css`: Styles for the AdminNav component.
+- `EvaluationForm.css`: Styles for the EvaluationForm component.
+- `Footer.css`: Styles for the Footer component.
+- `InstructorNav.css`: Styles for the InstructorNav component.
+- `StudentNav.css`: Styles for the StudentNav component.
+
+### 📁 Modals
+
+This sub-directory contains the modals used in the application. Each modal has a corresponding CSS file for styling:
+
+- `AddCriteriaModal.css`: Styles for the AddCriteriaModal.
+- `AddEvaluationModal.css`: Styles for the AddEvaluationModal.
+- `AddInstructorModal.css`: Styles for the AddInstructorModal.
+- `AddStudentModal.css`: Styles for the AddStudentModal.
+- `AddTeamModal.css`: Styles for the AddTeamModal.
+- `EditCriteriaModal.css`: Styles for the EditCriteriaModal.
+- `EditEvaluationModal.css`: Styles for the EditEvaluationModal.
+- `EditInstructorModal.css`: Styles for the EditInstructorModal.
+- `EditSectionModal.css`: Styles for the EditSectionModal.
+- `EditStudentModal.css`: Styles for the EditStudentModal.
+
+### 📁 Pages
+
+This sub-directory contains the css styles for the following pages. 
+
+- `AdminDashboard.css`: Styles for the AdminDashboard page.
+- `InstructorReport.css`: Styles for the InstructorReport page.
+- `LoginPage.css`: Styles for the LoginPage.
+- `StudentDashboard.css`: Styles for the StudentDashboard page.
 
 ## 🔧 Running the tests <a name = "tests"></a>
 Explain how to run the automated tests for this system.
