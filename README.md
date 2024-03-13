@@ -68,7 +68,7 @@ The project will facilitate the student evaluation process to enhance efficiency
 
 **Team Name**: GR3MS Tech Solutions <br>
 **Official Email Address**: <a href> GR3MSTechSolutions@lethbridgecollege.onmicrosoft.com </a> <br><br>
-**Team Members** <br><br>
+**Team Members** 
 - Stefan Joseph, Team Leader
 - Marvin Boral, Project Manager
 - Grazielle Agcaoili, Lead Programmer
@@ -129,22 +129,22 @@ Modals are used to create pop-up windows in the application interface.  Modals a
 
 ### List of Add Modal Components
 
-1. `AddCriteriaModal.js`: Modal to add evaluation criteria.
-2. `AddEvaluationModal.js`: Modal to add evaluations.
-3. `AddInstructorModal.js`: Modal to add instructors.
-4. `AddStudentModal.js`: Modal to add students.
-5. `AddTeamModal.js`: Modal to add teams.
+- `AddCriteriaModal.js`: Modal to add evaluation criteria.
+- `AddEvaluationModal.js`: Modal to add evaluations.
+- `AddInstructorModal.js`: Modal to add instructors.
+- `AddStudentModal.js`: Modal to add students.
+-  `AddTeamModal.js`: Modal to add teams.
 
 ### Edit Modals
 
 These modals are used for editing existing information.
 
-1. `EditCriteriaModal.js`: Modal to edit criteria information and details.
-2. `EditEvaluationModal.js`: Modal to edit evaluation details and information.
-3. `EditInstructorModal.js`: Modal used by admins or higher authority users, allowing them the ability to edit instructor details and information within the application interface easily and efficiently without needing direct access to the database or backend system directly, ensuring security protocols are maintained while providing flexibility in user management tasks.
-4. `EditSectionModal.js`: This modal allows authorized users (instructor/adminsitrator) with privileges sufficient enough, access into sections’ data where they can make necessary adjustments, corrections or updates as required ensuring that data integrity is maintained at all times while also allowing adaptability and modifications as needed aligning with organizational needs and requirements.
-5. `EditStudentModal.js`: A specialized modal designed specifically with features enabling easy editing of student’s data by instructor/administrator ensuring that student records are always up-to-date reflecting their current status, achievements, progress among other relevant details crucial in monitoring and evaluating student performance over time.
-6. `EditTeamModal.js`: This modal provides functionalities tailored towards making team data adjustments where necessary such as removing team members and updating the team name.
+- `EditCriteriaModal.js`: Modal to edit criteria information and details.
+- `EditEvaluationModal.js`: Modal to edit evaluation details and information.
+- `EditInstructorModal.js`: Modal used by admins or higher authority users, allowing them the ability to edit instructor details and information within the application interface easily and efficiently without needing direct access to the database or backend system directly, ensuring security protocols are maintained while providing flexibility in user management tasks.
+- `EditSectionModal.js`: This modal allows authorized users (instructor/adminsitrator) with privileges sufficient enough, access into sections’ data where they can make necessary adjustments, corrections or updates as required ensuring that data integrity is maintained at all times while also allowing adaptability and modifications as needed aligning with organizational needs and requirements.
+- `EditStudentModal.js`: A specialized modal designed specifically with features enabling easy editing of student’s data by instructor/administrator ensuring that student records are always up-to-date reflecting their current status, achievements, progress among other relevant details crucial in monitoring and evaluating student performance over time.
+- `EditTeamModal.js`: This modal provides functionalities tailored towards making team data adjustments where necessary such as removing team members and updating the team name.
 
 ## 📁 Pages
 This directory contains the main pages of PEMS:
@@ -193,6 +193,17 @@ This sub-directory contains the css styles for the following pages.
 - `InstructorReport.css`: Styles for the InstructorReport page.
 - `LoginPage.css`: Styles for the LoginPage.
 - `StudentDashboard.css`: Styles for the StudentDashboard page.
+
+## Main Files
+
+This directory contains the main files of PEMS.
+
+- `App.js`: This is the main JavaScript file that holds the base component of the React app.
+- `AppRoutes.js`: This file defines routes to various pages/views within the app.
+- `custom.css`: This is a custom stylesheet for additional styles.
+- `index.js`: This is the entry point JavaScript file for the React app, where ReactDOM renders the App component.
+- `setupProxy.js`: This is a configuration file to set up a proxy to the backend API server
+
 
 ## 🔧 Running the tests <a name = "tests"></a>
 Explain how to run the automated tests for this system.
