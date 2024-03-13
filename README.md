@@ -8,8 +8,8 @@
 <div align="center">
 
   [![Status](https://img.shields.io/badge/status-active-success.svg)]() 
-  [![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+  [![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/MartinRizada/PEMS/issues)
+  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/MartinRizada/PEMS/pulls)
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
@@ -43,7 +43,7 @@ The project will facilitate the student evaluation process to enhance efficiency
 **Business Need:**
 The project has been initiated to address the business need to streamline the current evaluation process. The existing manual data collection and calculation methods are time-consuming and inefficient, especially given the high number of student evaluations required. The need is to modernize and automate this process to improve efficiency and accuracy.
 
-## Project Scope <a name = "project_scope></a>
+## Project Scope <a name = "project_scope"></a>
 The project will facilitate the student evaluation process to enhance efficiency and accuracy, and provide insights through automated data collection, calculation, and presentation. The system being built in this project will be aligned to only two courses (CIT2275/6) and will not be integrated into Canvas. It will encompass two user types: instructors and students.
 
 **In Scope**
@@ -67,13 +67,13 @@ The project will facilitate the student evaluation process to enhance efficiency
 **Team Name**: GR3MS Tech Solutions <br>
 **Official Email Address**: <a href> GR3MSTechSolutions@lethbridgecollege.onmicrosoft.com </a> <br><br>
 **Team Members** <br><br>
-●	Stefan Joseph, Team Leader<br>
-●	Marvin Boral, Project Manager<br>
-●	Grazielle Agcaoili, Lead Programmer<br>
-●	Martin Rizada, System Design Lead<br>
-●	Razario Honiwell, UIX Lead Designer<br>
-●	Mark Alexander, Lead Quality Assurance Tester<br>
-
+- Stefan Joseph, Team Leader
+- Marvin Boral, Project Manager
+- Grazielle Agcaoili, Lead Programmer
+- Martin Rizada, System Design Lead
+- Razario Honiwell, UIX Lead Designer
+- Mark Alexander, Lead Quality Assurance Tester
+  
 **Client**: Mr. Timothy Frantz, CIT Instructor at Lethbridge College
 
 
