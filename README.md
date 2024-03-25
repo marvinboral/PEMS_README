@@ -25,6 +25,16 @@
 - [Project Scope](#project_scope)
 - [Team Introduction](#team_intro)
 - [Getting Started](#getting_started)
+  - [Installation Steps](#installation-steps)
+    - [Downloading MS SQL Server 2019 Standard Edition](#downloading-ms-sql-server-2019-standard-edition)
+    - [Installation of SQL Server](#installation-of-sql-server)
+    - [Installing SQL Server Management Studio (SSMS)](#installing-sql-server-management-studio-ssms)
+  - [Installation of Visual Studio Community](#installation-of-visual-studio-community)
+    - [Configuring SQL Server](#configuring-sql-server)
+    - [Restoring the Database Steps](#restoring-the-database-steps)
+    - [Cloning Repo in Visual Studio Steps](#cloning-repo-in-visual-studio-steps)
+  - [Running the Project in Visual Studio](#running-the-project-in-visual-studio)
+  - [Additional Notes](#additional-notes)
 - [File Structure](#file_structure)
 - [Deployment](#deployment)
 - [Usage](#usage)
@@ -82,29 +92,74 @@ The project will facilitate the student evaluation process to enhance efficiency
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
 ## Prerequisites
-What things you need to install the software and how to install them.
+What things do you need to install the software and how to install them.
 
 - Visual Studio 2022
 - NET Core 6 Framework
 - C#
 - Microsoft SQL 2019
    
-## Installing
+## Installation Steps
 
-Once you have installed the necessary software, you may get this online repository link from GitHub and Clone it to your local device. 
+### Downloading MS SQL Server 2019 Standard Edition
+- Visit [this link](https://azureforeducation.microsoft.com/devtools) to download the 2019 MS SQL Standard Edition.
 
-```
-https://github.com/MartinRizada/PEMS.git
-```
-Navigate to the clientApp directory within your project
-```
-cd clientApp
-```
+### Installation of SQL Server
+- Follow the installation instructions provided by Microsoft for installing the SQL Server.
+- Check the Database Engine
+- Set the Instance Name to: `PEMS_SERVER`
 
-Install the required dependencies
-```
-npm install
-```
+### Installing SQL Server Management Studio (SSMS)
+- After installing SQL Server, download and install SQL Server Management Studio from the official Microsoft website.
+
+### Installation of Visual Studio Community
+- Visit  [this link](https://visualstudio.microsoft.com/vs/community/) to download and install Visual Studio Community from the official Visual Studio website.
+
+## Configuring SQL Server
+
+### Restoring the Database Steps
+- Follow these steps to restore a database:
+  1. Open SQL Server Management Studio.
+  2. Connect to your SQL Server instance.
+  3. Right-click on `Databases` and select `Restore Files and Filegroups` 
+  4. Choose the appropriate backup source (e.g., disk or URL).
+  5. Select the most recent backup file
+  6. Specify the destination database name: `PEMS`.
+  7. Click "OK" to start the restoration process.
+
+### Cloning Repo in Visual Studio Steps
+- Follow these steps to clone a repository in Visual Studio:
+  1. Open Visual Studio.
+  2. Go to the "Team Explorer" tab.
+  3. Click on the "Manage Connections" icon (usually looks like a plug).
+  4. Click on "Clone" under the "Local Git Repositories" section.
+  5. Enter the URL of the repository you want to clone.
+  6. Choose a local path for the repository.
+  7. Click "Clone" to start the cloning process.
+
+## Running the Project in Visual Studio
+
+Once you have cloned the repository and configured the SQL Server, follow these steps to run the project in Visual Studio:
+
+1. Open Visual Studio.
+2. Open the project solution file (.sln) from the cloned repository usually named as PEMS.sln.
+3. In View tab, click terminal it will show the developer powershell on the bottom of your screen.
+4. Navigate to the file location of the project folder using: `cd`.
+5. Navigate to the PEMS: `cd PEMS`
+6. Navigate to the ClientApp directory: `cd ClientApp`
+7. It should be like this: `C:\Users\yourname\source\repos\ProjectPEMS\PEMS\ClientApp`
+8. Run npm install in the same directory location to install the dependencies: `npm install`
+9. Change the database connection string based on SQL Server Name and Database name in the following location
+    - appsettings.json
+    - PEMSContext.cs 
+      
+11. Build the solution by selecting "Build" > "Build Solution" from the menu.
+12. Press F5 or select "Debug" > "Start Debugging" to run the project.
+
+## Additional Notes
+- Make sure to have the necessary permissions and credentials to perform the above actions.
+- If you encounter any issues during installation or configuration, refer to the official documentation provided by Microsoft or Visual Studio Community.
+
 #  File Structure <a name = "file_structure"></a>
 
 This project is organized into several directories and files. 
