@@ -37,9 +37,7 @@
   - [Additional Notes](#additional-notes)
 - [File Structure](#file_structure)
 - [Deployment](#deployment)
-- [Usage](#usage)
 - [Built Using](#built_using)
-- [TODO](../TODO.md)
 - [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
@@ -259,39 +257,29 @@ This directory contains the main files of PEMS.
 - `setupProxy.js`: This is a configuration file to set up a proxy to the backend API server
 
 
-## 🔧 Running the tests <a name = "tests"></a>
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ## 🎈 Usage <a name="usage"></a>
-Add notes about how to use the system.
+Add notes about how to use the system. (TO DO)
 
 ## 🚀 Deployment <a name = "deployment"></a>
-Add additional notes about how to deploy this on a live system.
+TO DO
 
 ## ⛏️ Built Using <a name = "built_using"></a>
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [MS SQL 2019](https://www.microsoft.com/en-us/sql-server/sql-server-2019) - Database
+- [Windows Server 2019](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019#Overview) - Server Framework and Environment
+- [.NET 6](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-6) - Web Framework
+- [Javascript](https://www.javascript.com/) - Front-End Web Development
+- [Microsoft C#](https://learn.microsoft.com/en-us/dotnet/csharp/) - Back-End Development
 
 ## ✍️ Authors <a name = "authors"></a>
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+- [@kylelobo](https://github.com/kylelobo) - readme.md template
 
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+### Contributors ###
+Stefan Joseph - Team Leader
+Marvin Boral - Project Manager
+Mark Alexander - Quality Assurance Lead
+Grazielle Agcaoili - Lead Programmer
+Martin Rizada - System Design Lead
+Razario Honiwell - UI/UX Lead
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 - Hat tip to anyone whose code was used
